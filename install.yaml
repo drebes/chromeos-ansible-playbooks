@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: no
+  become: yes
+
+  roles:
+    - vscode
+    - docker
+    - terraform
+    - google-cloud-cli
+    - obsidian

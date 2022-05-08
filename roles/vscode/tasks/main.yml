@@ -1,0 +1,17 @@
+---
+- name: Set GPG APT key
+  apt_key:
+    url: http://packages.microsoft.com/keys/microsoft.asc
+    state: present
+
+- name: Add repository
+  apt_repository:
+    repo: "deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main"
+    state: present
+    update_cache: true
+
+- name: Install package
+  apt:
+    name: code
+    state: present
+    update_cache: true

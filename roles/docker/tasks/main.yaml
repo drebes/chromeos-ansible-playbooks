@@ -1,0 +1,17 @@
+---
+- name: Set GPG APT key
+  apt_key:
+    url: https://apt.releases.hashicorp.com/gpg
+    state: present
+
+- name: Add repository
+  apt_repository:
+    repo: "deb [arch=amd64] https://apt.releases.hashicorp.com bullseye main"
+    state: present
+    update_cache: true
+
+- name: Install package
+  apt:
+    name: terraform
+    state: present
+    update_cache: true

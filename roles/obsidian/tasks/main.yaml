@@ -1,0 +1,14 @@
+---
+- name: Install flatpak
+  apt:
+    name: flatpak
+    update_cache: true
+- name: Add the flathub flatpak repository remote
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+- name: Install the Obsidian flatpak
+  community.general.flatpak:
+    name:  md.obsidian.Obsidian
+    state: present
