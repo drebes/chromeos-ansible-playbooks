@@ -1,17 +1,22 @@
 ---
 - name: Set GPG APT key
   apt_key:
-    url: https://apt.releases.hashicorp.com/gpg
+    url: https://download.docker.com/linux/debian/gpg
     state: present
 
 - name: Add repository
   apt_repository:
-    repo: "deb [arch=amd64] https://apt.releases.hashicorp.com bullseye main"
+    repo: "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable"
     state: present
     update_cache: true
 
-- name: Install package
+- name: Install packages
   apt:
-    name: terraform
+    name: "{{ packages }}"
     state: present
     update_cache: true
+  vars:
+    packages:
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
