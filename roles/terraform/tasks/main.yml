@@ -1,12 +1,12 @@
 ---
 - name: Set GPG APT key
   apt_key:
-    url: "http://packages.microsoft.com/keys/microsoft.asc"
+    url: "https://apt.releases.hashicorp.com/gpg"
     state: present
 
 - name: Add repository
   copy:
-    content: "deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main"
+    content: "deb [arch=amd64] https://apt.releases.hashicorp.com bullseye main"
     dest: /etc/apt/sources.list.d/terraform.list
     group: root
     owner: root
@@ -14,5 +14,5 @@
 
 - name: Install package
   apt:
-    name: code
+    name: terraform
     update_cache: true
