@@ -4,8 +4,9 @@
   become: yes
 
   roles:
-    - vscode
     - docker
-    - terraform
     - google-cloud-cli
     - obsidian
+    - opensc
+    - terraform
+    - vscode

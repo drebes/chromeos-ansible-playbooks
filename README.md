@@ -4,11 +4,13 @@ Last tested on ChromeOS Flex (103.0.5035.0), Linux Development Environment (Cros
 
 ## What is included
 
-* [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
+linux)
 * [Docker](https://docs.docker.com/engine/install/debian/)
-* [Terraform](https://www.terraform.io/cli/install/apt)
 * [Google Cloud  (gcloud) CLI](https://cloud.google.com/sdk/docs/install#deb)
 * [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)
+* [OpenSC](https://github.com/OpenSC/OpenSC/wiki)
+* [Terraform](https://www.terraform.io/cli/install/apt)
+* [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
 
 ## Requirements
 
