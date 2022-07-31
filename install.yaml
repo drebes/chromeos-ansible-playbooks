@@ -5,6 +5,7 @@
 
   roles:
     - docker
+    - git-config
     - google-cloud-cli
     - obsidian
     - opensc

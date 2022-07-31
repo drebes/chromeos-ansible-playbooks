@@ -1,6 +1,6 @@
 # Playbook for installing various (developer) tools into ChromeOS Linux environment
 
-Last tested on ChromeOS Flex (103.0.5035.0), Linux Development Environment (Crostini), based on Debian bullseye
+Last tested on ChromeOS Flex (103.0.5060.132), Linux Development Environment (Crostini), based on Debian bullseye.
 
 ## What is included
 
@@ -29,10 +29,17 @@ git clone https://github.com/drebes/chromeos-ansible-playbooks.git
 Running the playbook:
 
 ```shell
-ansible-playbook install.yaml
+cd chromeos-ansible-playbooks && ansible-playbook install.yaml
 ```
 
 ## Customizing
 
-If you'd like to customize the list of packages that get install, edit `install.yaml` and
-remove/comment out the corresponding roles.
+If you'd like to customize the list of packages that get installed, edit `install.yaml` and
+remove/modify/comment out the corresponding roles.
+
+### Optional Setup
+
+#### git user setup
+
+You can configure your default (global) git commit identity (user name and email) by uncommenting
+the `git_config` variable in the file `group_vars/all` and setting it to your appropriate value.
