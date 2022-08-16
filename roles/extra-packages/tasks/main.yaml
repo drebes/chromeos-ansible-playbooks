@@ -1,0 +1,6 @@
+- name: Install packages
+  apt:
+    name: '{{ extra_packages.packages }}'
+    state: present
+    update_cache: true
+  when: extra_packages.packages is defined

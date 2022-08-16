@@ -5,6 +5,7 @@
 
   roles:
     - docker
+    - extra-packages
     - git-config
     - google-cloud-cli
     - obsidian

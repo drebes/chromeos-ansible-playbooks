@@ -1,4 +1,9 @@
 ---
+extra_packages:
+  packages:
+  - bind9-dnsutils
+  - jq
+  - netcat-openbsd
 #git_config:
 #  user_name:  Roberto Jung Drebes
 #  user_email: drebes@users.noreply.github.com

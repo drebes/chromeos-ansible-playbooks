@@ -10,6 +10,10 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
 * [OpenSC](https://github.com/OpenSC/OpenSC/wiki)
 * [Terraform](https://www.terraform.io/cli/install/apt)
 * [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
+* Extra Packages:
+  * bind9-dnsutils
+  * jq
+  * netcat-openbsd
 
 ## Requirements
 
@@ -42,3 +46,10 @@ remove/modify/comment out the corresponding roles.
 
 You can configure your default (global) git commit identity (user name and email) by uncommenting
 the `git_config` variables in the file `group_vars/all` and setting it to your appropriate value.
+
+#### Extra packages
+
+You can configure the list of extra packages that get installed by modifying the 
+the `packages` variable under `extra_packages` in the file `group_vars/all` and setting it to the list of packages
+you'd like to get installed.
+
