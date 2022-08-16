@@ -1,10 +1,9 @@
 # Playbook for installing various (developer) tools into ChromeOS Linux environment
 
-Last tested on ChromeOS Flex (103.0.5060.132), Linux Development Environment (Crostini), based on Debian bullseye.
+Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Crostini), based on Debian bullseye.
 
 ## What is included
 
-linux)
 * [Docker](https://docs.docker.com/engine/install/debian/)
 * [Google Cloud  (gcloud) CLI](https://cloud.google.com/sdk/docs/install#deb)
 * [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)
@@ -42,4 +41,4 @@ remove/modify/comment out the corresponding roles.
 #### git user setup
 
 You can configure your default (global) git commit identity (user name and email) by uncommenting
-the `git_config` variable in the file `group_vars/all` and setting it to your appropriate value.
+the `git_config` variables in the file `group_vars/all` and setting it to your appropriate value.
