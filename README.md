@@ -53,3 +53,8 @@ You can configure the list of extra packages that get installed by modifying the
 the `packages` variable under `extra_packages` in the file `group_vars/all` and setting it to the list of packages
 you'd like to get installed.
 
+#### Visual Studio Code extensions
+
+You can configure the list of Visual Studio Code extensions that get installed by modifying the 
+the `extensions` variable under `vscode` in the file `group_vars/all` and setting it to the list of extensions
+you'd like to get installed.

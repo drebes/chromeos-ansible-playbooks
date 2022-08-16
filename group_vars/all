@@ -4,6 +4,12 @@ extra_packages:
   - bind9-dnsutils
   - jq
   - netcat-openbsd
+vscode:
+  extensions:
+  - ms-azuretools.vscode-docker
+  - ms-vscode-remote.remote-containers
+  - ms-kubernetes-tools.vscode-kubernetes-tools
+  - GoogleCloudTools.cloudcode
 #git_config:
 #  user_name:  Roberto Jung Drebes
 #  user_email: drebes@users.noreply.github.com

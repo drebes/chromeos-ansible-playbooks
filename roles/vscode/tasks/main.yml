@@ -15,3 +15,12 @@
     name: code
     state: present
     update_cache: true
+
+- name: Install extensions
+  shell: "code --install-extension {{ item }}"
+  become: no
+  register: result
+  when:
+    - vscode.extensions is defined
+  loop: "{{ vscode.extensions }}"
+  changed_when: result.stdout is not search('is already installed.')
