@@ -1,0 +1,34 @@
+- name: Create systemd user directory
+  ansible.builtin.file:
+    path: '{{ home_dir }}/.config/systemd/user'
+    state: directory
+    mode: '0755'
+  become: true
+  become_user: "{{ lookup('env','USER') }}"
+- name: Copy systemd service file
+  copy:
+    src: files/ssh-agent.service
+    dest: '{{ home_dir }}/.config/systemd/user/ssh-agent.service'
+  become: true
+  become_user: "{{ lookup('env','USER') }}"
+- name: Create systemd environment.d directory
+  ansible.builtin.file:
+    path: '{{ home_dir }}/.config/environment.d'
+    state: directory
+    mode: '0755'
+  become: true
+  become_user: "{{ lookup('env','USER') }}"
+- name: Copy systemd SSH auth socket file
+  copy:
+    src: files/ssh_auth_socket.conf
+    dest: '{{ home_dir }}/.config/environment.d/ssh_auth_socket.conf'
+  become: true
+  become_user: "{{ lookup('env','USER') }}"
+- name: Run ssh-agent service
+  ansible.builtin.systemd:
+    name: ssh-agent
+    enabled: true
+    scope: user
+    state: started
+  become: true
+  become_user: "{{ lookup('env','USER') }}"
