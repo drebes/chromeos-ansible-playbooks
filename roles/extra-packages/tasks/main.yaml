@@ -1,6 +1,7 @@
 - name: Install packages
   apt:
-    name: '{{ extra_packages.packages }}'
+    name: '{{ item }}'
     state: present
     update_cache: true
+  loop: "{{ extra_packages.packages }}"
   when: extra_packages.packages is defined
