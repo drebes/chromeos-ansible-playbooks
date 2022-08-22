@@ -7,7 +7,6 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
 * [Docker](https://docs.docker.com/engine/install/debian/)
 * [Google Cloud  (gcloud) CLI](https://cloud.google.com/sdk/docs/install#deb)
 * [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)
-* [OpenSC](https://github.com/OpenSC/OpenSC/wiki)
 * SSH Agent
 * [Terraform](https://www.terraform.io/cli/install/apt)
 * [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
@@ -15,6 +14,7 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
   * bind9-dnsutils
   * jq
   * netcat-openbsd
+  * opensc
 
 ## Requirements
 

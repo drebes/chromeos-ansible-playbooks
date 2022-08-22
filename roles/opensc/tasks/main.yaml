@@ -1,8 +1,0 @@
-- name: Install packages
-  apt:
-    name: "{{ packages }}"
-    state: present
-    update_cache: true
-  vars:
-    packages:
-    - opensc

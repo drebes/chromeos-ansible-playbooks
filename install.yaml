@@ -9,7 +9,6 @@
     - git-config
     - google-cloud-cli
     - obsidian
-    - opensc
     - ssh-agent
     - terraform
     - vscode
