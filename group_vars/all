@@ -3,6 +3,7 @@ extra_packages:
   packages:
   - bind9-dnsutils
   - jq
+  - kubectl
   - netcat-openbsd
   - opensc
 vscode:

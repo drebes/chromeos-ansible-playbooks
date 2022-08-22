@@ -13,6 +13,7 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
 * Extra Packages:
   * bind9-dnsutils
   * jq
+  * kubectl
   * netcat-openbsd
   * opensc
 
