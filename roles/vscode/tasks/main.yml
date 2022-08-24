@@ -1,4 +1,10 @@
 ---
+- name: Install dependencies
+  apt:
+    name: gnome-keyring
+    state: present
+    update_cache: true
+
 - name: Set GPG APT key
   apt_key:
     url: http://packages.microsoft.com/keys/microsoft.asc
