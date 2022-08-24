@@ -12,6 +12,7 @@ vscode:
   - ms-vscode-remote.remote-containers
   - ms-kubernetes-tools.vscode-kubernetes-tools
   - GoogleCloudTools.cloudcode
+  - HashiCorp.terraform
 #git_config:
 #  user_name:  Roberto Jung Drebes
 #  user_email: drebes@users.noreply.github.com
