@@ -13,6 +13,7 @@ Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Cr
 * Visual Studio Code Extensions:
   - [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
   - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+  - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?github.vscode-pull-request-github)
   - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
   - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
   - [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)

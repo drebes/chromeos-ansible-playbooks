@@ -10,6 +10,7 @@ vscode:
   extensions:
   - GoogleCloudTools.cloudcode
   - HashiCorp.terraform
+  - github.vscode-pull-request-github
   - ms-azuretools.vscode-docker
   - ms-kubernetes-tools.vscode-kubernetes-tools
   - ms-vscode-remote.remote-containers
