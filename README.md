@@ -10,12 +10,18 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
 * SSH Agent
 * [Terraform](https://www.terraform.io/cli/install/apt)
 * [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
+* Visual Studio Code Extensions:
+  - [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
+  - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+  - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+  - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
+  - [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 * Extra Packages:
-  * bind9-dnsutils
-  * jq
-  * kubectl
-  * netcat-openbsd
-  * opensc
+  - bind9-dnsutils
+  - jq
+  - kubectl
+  - netcat-openbsd
+  - opensc
 
 ## Requirements
 
