@@ -16,6 +16,7 @@ Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Cro
   - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
   - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
   - [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+  - [YAML](https://marketplace.visualstudio.com/items?redhat.vscode-yaml)
 * Extra Packages:
   - bind9-dnsutils
   - jq

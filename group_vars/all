@@ -13,6 +13,7 @@ vscode:
   - ms-azuretools.vscode-docker
   - ms-kubernetes-tools.vscode-kubernetes-tools
   - ms-vscode-remote.remote-containers
+  - redhat.vscode-yaml
 #git_config:
 #  user_name:  Roberto Jung Drebes
 #  user_email: drebes@users.noreply.github.com
