@@ -1,6 +1,6 @@
-# Playbook for installing various (developer) tools into ChromeOS Linux environment
+# Playbook for installing various (mostly developer) tools into ChromeOS Linux environment
 
-Last tested on ChromeOS Flex (104.0.5112.83), Linux Development Environment (Crostini), based on Debian bullseye.
+Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Crostini), based on Debian bullseye.
 
 ## What is included
 
@@ -60,10 +60,10 @@ the `git_config` variables in the file `group_vars/all` and setting it to your a
 
 You can configure the list of extra packages that get installed by modifying the 
 the `packages` variable under `extra_packages` in the file `group_vars/all` and setting it to the list of packages
-you'd like to get installed.
+you'd like to have.
 
 #### Visual Studio Code extensions
 
 You can configure the list of Visual Studio Code extensions that get installed by modifying the 
 the `extensions` variable under `vscode` in the file `group_vars/all` and setting it to the list of extensions
-you'd like to get installed.
+you'd like to have.
