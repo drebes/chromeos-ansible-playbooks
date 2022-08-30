@@ -24,6 +24,7 @@ Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Cr
   - kubectl
   - netcat-openbsd
   - opensc
+  - python3-venv
 
 ## Requirements
 
