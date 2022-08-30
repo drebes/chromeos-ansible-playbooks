@@ -21,7 +21,6 @@ Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Cr
 * Extra Packages:
   - bind9-dnsutils
   - jq
-  - kubectl
   - netcat-openbsd
   - opensc
   - python3-venv

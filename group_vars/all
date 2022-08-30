@@ -3,7 +3,6 @@ extra_packages:
   packages:
   - bind9-dnsutils
   - jq
-  - kubectl
   - netcat-openbsd
   - opensc
   - python3-venv

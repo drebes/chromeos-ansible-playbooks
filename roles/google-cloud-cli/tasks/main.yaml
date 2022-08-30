@@ -12,7 +12,9 @@
     owner: root
     mode: '0644'
 
-- name: Install package
+- name: Install packages
   apt:
-    name: google-cloud-cli
+    pkg:
+    - google-cloud-cli
+    - kubectl
     update_cache: true
