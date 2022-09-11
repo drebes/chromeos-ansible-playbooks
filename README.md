@@ -8,6 +8,7 @@ Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Cr
 * [Google Cloud  (gcloud) CLI](https://cloud.google.com/sdk/docs/install#deb)
 * [Obsidian](https://flathub.org/apps/details/md.obsidian.Obsidian)
 * SSH Agent
+* [Tailscale](https://tailscale.com/)
 * [Terraform](https://www.terraform.io/cli/install/apt)
 * [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
 * Visual Studio Code Extensions:
@@ -68,3 +69,7 @@ you'd like to have.
 You can configure the list of Visual Studio Code extensions that get installed by modifying the 
 the `extensions` variable under `vscode` in the file `group_vars/all` and setting it to the list of extensions
 you'd like to have.
+
+#### Connect to Tailscale 
+
+You can automatically connect the Linux Development Environment to your Tailscale network by defining the `TAILSCALE_AUTHKEY` environment variable with the contents of your [auth key](https://tailscale.com/kb/1085/auth-keys/) before running this playbook.

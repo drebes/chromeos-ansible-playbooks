@@ -10,5 +10,6 @@
     - google-cloud-cli
     - obsidian
     - ssh-agent
+    - tailscale
     - terraform
     - vscode

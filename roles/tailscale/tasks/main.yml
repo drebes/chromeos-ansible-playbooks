@@ -1,0 +1,38 @@
+---
+- name: Set GPG APT key
+  apt_key:
+    url: "https://pkgs.tailscale.com/stable/debian/bullseye.noarmor.gpg"
+    state: present
+
+- name: Add repository
+  copy:
+    content: "deb [arch=amd64] https://pkgs.tailscale.com/stable/debian bullseye main"
+    dest: /etc/apt/sources.list.d/tailscale.list
+    group: root
+    owner: root
+    mode: '0644'
+
+- name: Install package
+  apt:
+    name: tailscale
+    update_cache: true
+
+- name: Run tailscaled service
+  ansible.builtin.systemd:
+    name: tailscaled
+    enabled: true
+    state: started
+
+- name: Get tailscale status
+  ansible.builtin.command: tailscale status
+  changed_when: false
+  register: tailscale_status
+  failed_when: false
+
+- name: Run tailscale up if authkey is defined
+  ansible.builtin.command: tailscale up --authkey {{ tailscale_authkey }}
+  no_log: true
+  ignore_errors: true
+  when: >
+    'Logged out.' in tailscale_status.stdout
+    and tailscale_authkey|length > 0
