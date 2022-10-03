@@ -1,6 +1,6 @@
 # Playbook for installing various (mostly developer) tools into ChromeOS Linux environment
 
-Last tested on ChromeOS Flex (104.0.5112.105), Linux Development Environment (Crostini), based on Debian bullseye.
+Last tested on ChromeOS & ChromeOS Flex (105.0.5195.112), Linux Development Environment (Crostini), based on Debian bullseye.
 
 ## What is included
 
