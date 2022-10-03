@@ -21,10 +21,12 @@ Last tested on ChromeOS & ChromeOS Flex (105.0.5195.112), Linux Development Envi
   - [YAML](https://marketplace.visualstudio.com/items?redhat.vscode-yaml)
 * Extra Packages:
   - bind9-dnsutils
+  - ipcalc
   - jq
   - netcat-openbsd
   - opensc
   - python3-venv
+  - traceroute
 
 ## Requirements
 

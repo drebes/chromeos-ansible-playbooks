@@ -2,10 +2,12 @@
 extra_packages:
   packages:
   - bind9-dnsutils
+  - ipcalc
   - jq
   - netcat-openbsd
   - opensc
   - python3-venv
+  - traceroute
 vscode:
   extensions:
   - GoogleCloudTools.cloudcode
