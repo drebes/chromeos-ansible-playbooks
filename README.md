@@ -33,6 +33,7 @@ Last tested on ChromeOS & ChromeOS Flex (105.0.5195.112), Linux Development Envi
 Installing ansible:
 
 ```shell
+sudo apt update
 sudo apt install ansible -y
 ```
 
