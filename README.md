@@ -15,14 +15,17 @@ Last tested on ChromeOS & ChromeOS Flex (105.0.5195.112), Linux Development Envi
   - [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode)
   - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
   - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?github.vscode-pull-request-github)
+  - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
   - [HashiCorp Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
   - [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
   - [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-  - [YAML](https://marketplace.visualstudio.com/items?redhat.vscode-yaml)
+  - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 * Extra Packages:
   - bind9-dnsutils
+  - golang
   - ipcalc
   - jq
+  - make
   - netcat-openbsd
   - opensc
   - python3-venv
